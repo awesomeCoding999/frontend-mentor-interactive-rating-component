@@ -6,6 +6,45 @@
   );
   border-radius: 30px;
   width: 327px;
-  height: 360px;
-  margin: 154px 24px 20px;
+  margin: 9.625rem 1.5rem 1.25rem;
+  padding: 1rem;
+}
+
+.star-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.title {
+  margin: 1rem 0 0.9rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--light-grey);
+  line-height: 22px;
+  font-size: 0.875rem;
+  width: 279px;
+}
+
+.ratings-container {
+  margin: 1.5rem 0;
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--medium-grey);
+}
+
+.submit-btn {
+  padding: 0.75rem 6.75rem;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 22.5px;
+  width: 279px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.86667px;
+  margin-bottom: 1rem;
 }

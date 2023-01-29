@@ -23,10 +23,10 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  font-weight: 400;
   background-color: var(--very-dark-blue);
   color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
