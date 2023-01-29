@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ThankYouMsg } from "../thank-you-page";
+import { ThankYouMsg } from "../thank-you-screen";
+import { SelectRatingScreen } from "../select-rating-screen";
 import "./Card.css";
 
 export const Card = () => {
@@ -13,10 +14,19 @@ export const Card = () => {
     setSelectedRatingNumber(e.target.innerText);
   };
 
+  const showThankYouScreen = () => {
+    if (!selectedRatingNumber) {
+      alert("Please select a rating");
+      return;
+    }
+
+    setHasRatingBeenSubmitted(true);
+  };
+
   return (
     <div className="card-container">
       {hasRatingBeenSubmitted ? (
-        <ThankYouMsg />
+        <></>
       ) : (
         <>
           <div className="circle-styles">
@@ -47,7 +57,9 @@ export const Card = () => {
               </button>
             ))}
           </div>
-          <button className="submit-btn">submit</button>
+          <button onClick={showThankYouScreen} className="submit-btn">
+            submit
+          </button>
         </>
       )}
     </div>
