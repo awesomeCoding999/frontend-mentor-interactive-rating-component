@@ -11,16 +11,18 @@
 
 button.circle-styles {
   border: none;
-  color: var(--white);
+  color: var(--medium-grey);
   cursor: pointer;
 }
 
 button.circle-styles:hover {
   background-color: var(--orange);
+  color: var(--white);
 }
 
-.selected-rating {
+.circle-styles.selected-rating {
   background-color: var(--medium-grey);
+  color: var(--white);
 }
 
 .star-icon {
