@@ -79,33 +79,3 @@ button.circle-styles:hover {
   background-color: var(--white);
   color: var(--orange);
 }
-
-.thank-you-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.thank-you-illustration {
-  margin-top: 2.125rem;
-  margin-bottom: 1.5rem;
-}
-
-.rating-msg {
-  background-color: var(--dark-blue);
-  color: var(--orange);
-  border-radius: 22.5px;
-  padding: 0.313rem 0.75rem;
-}
-
-.thank-you-heading {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.thank-you-paragraph {
-  color: var(--light-grey);
-  width: 279px;
-  margin-bottom: 1.313rem;
-}

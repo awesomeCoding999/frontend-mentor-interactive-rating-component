@@ -6,16 +6,14 @@ import "./Card.css";
 export const Card = () => {
   const [hasRatingBeenSubmitted, setHasRatingBeenSubmitted] =
     useState<boolean>(false);
-  const [selectedRatingNumber, setSelectedRatingNumber] = useState<
-    string | null
-  >(null);
+  const [selectedRating, setSelectedRating] = useState<string | null>(null);
 
   const getSelectedRating = (e: any) => {
-    setSelectedRatingNumber(e.target.innerText);
+    setSelectedRating(e.target.innerText);
   };
 
   const showThankYouScreen = () => {
-    if (!selectedRatingNumber) {
+    if (!selectedRating) {
       alert("Please select a rating");
       return;
     }
@@ -26,21 +24,7 @@ export const Card = () => {
   return (
     <div className="card-container">
       {hasRatingBeenSubmitted ? (
-        <div className="thank-you-container">
-          <img
-            className="thank-you-illustration"
-            src="src/assets/illustration-thank-you.svg"
-            alt="thank you illustration"
-          />
-          <p className="rating-msg">
-            You selected {selectedRatingNumber} out of 5
-          </p>
-          <h2 className="thank-you-heading">Thank you!</h2>
-          <p className="thank-you-paragraph">
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </p>
-        </div>
+        <ThankYouMsg selectedRating={selectedRating} />
       ) : (
         <>
           <div className="circle-styles">
@@ -61,9 +45,7 @@ export const Card = () => {
               <button
                 onClick={(e) => getSelectedRating(e)}
                 className={`circle-styles ${
-                  rating === Number(selectedRatingNumber)
-                    ? "selected-rating"
-                    : ""
+                  rating === Number(selectedRating) ? "selected-rating" : ""
                 }`}
                 key={`rating${rating}`}
               >
