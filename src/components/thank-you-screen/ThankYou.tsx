@@ -9,7 +9,7 @@ export const ThankYouMsg = ({ selectedRating }: ThankYouMsgProps) => {
     <div className="thank-you-container">
       <img
         className="thank-you-illustration"
-        src="src/assets/illustration-thank-you.svg"
+        src="/illustration-thank-you.svg"
         alt="thank you illustration"
       />
       <p className="rating-msg">You selected {selectedRating} out of 5</p>

@@ -14,11 +14,7 @@ export const SelectRatingScreen = ({
   return (
     <>
       <div className="circle-styles">
-        <img
-          className="star-icon"
-          src="src/assets/icon-star.svg"
-          alt="star icon"
-        />
+        <img className="star-icon" src="/icon-star.svg" alt="star icon" />
       </div>
 
       <h1 className="title">How did we do?</h1>
