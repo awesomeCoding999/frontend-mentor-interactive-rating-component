@@ -67,3 +67,15 @@ button.circle-styles:hover {
   background-color: var(--white);
   color: var(--orange);
 }
+
+@media (min-width: 1024px) {
+  .circle-styles {
+    width: 51px;
+    height: 51px;
+  }
+  .submit-btn,
+  .description,
+  .ratings-container {
+    width: 341px;
+  }
+}

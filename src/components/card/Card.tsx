@@ -23,7 +23,7 @@ export const Card = () => {
   };
 
   return (
-    <div className="card-container">
+    <main className="card-container">
       {hasRatingBeenSubmitted ? (
         <FadeIn delay={200}>
           <ThankYouMsg selectedRating={selectedRating} />
@@ -35,6 +35,6 @@ export const Card = () => {
           getSelectedRating={getSelectedRating}
         />
       )}
-    </div>
+    </main>
   );
 };
