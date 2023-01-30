@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ThankYouMsg } from "../thank-you-screen";
 import { SelectRatingScreen } from "../select-rating-screen";
+import FadeIn from "react-fade-in";
 import "./Card.css";
 
 export const Card = () => {
@@ -24,7 +25,9 @@ export const Card = () => {
   return (
     <div className="card-container">
       {hasRatingBeenSubmitted ? (
-        <ThankYouMsg selectedRating={selectedRating} />
+        <FadeIn delay={200}>
+          <ThankYouMsg selectedRating={selectedRating} />
+        </FadeIn>
       ) : (
         <SelectRatingScreen
           selectedRating={selectedRating}

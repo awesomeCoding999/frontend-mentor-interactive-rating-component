@@ -26,4 +26,6 @@
   color: var(--light-grey);
   width: 279px;
   margin-bottom: 1.313rem;
+  font-size: 0.875rem;
+  text-align: center;
 }
