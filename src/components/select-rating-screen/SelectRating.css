@@ -80,4 +80,12 @@ button.circle-styles:hover {
   .ratings-container {
     width: 341px;
   }
+
+  .title {
+    margin-top: 1.875rem;
+  }
+
+  .ratings-container {
+    margin-bottom: 2rem;
+  }
 }
